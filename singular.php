@@ -43,13 +43,13 @@
 						
 					elseif ( $post_format == 'gallery' ) : ?>
 					
-						<figure data-enlargeable style="cursor: zoom-in" class="featured-media clear">
+						<figure class="featured-media clear">
 							<?php fukasawa_flexslider( 'post-image' ); ?>
 						</figure><!-- .featured-media -->
 									
 					<?php elseif ( has_post_thumbnail() ) : ?>
 							
-						<figure data-enlargeable style="cursor: nesw-resize" class="featured-media clear">
+						<figure data-enlargeable style="cursor: all-scroll" class="featured-media clear">
 							<?php the_post_thumbnail( 'post-image' ); ?>
 						</figure><!-- .featured-media -->
 							
