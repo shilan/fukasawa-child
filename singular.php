@@ -19,7 +19,7 @@
 					
 						if ( $pos = strpos( $post->post_content, '<!--more-->' ) ) : ?>
 				
-							<figure data-enlargeable style="cursor: zoom-in" class="featured-media clear">
+							<figure class="featured-media clear">
 							
 								<?php
 										
@@ -49,7 +49,7 @@
 									
 					<?php elseif ( has_post_thumbnail() ) : ?>
 							
-						<figure data-enlargeable style="cursor: zoom-in" class="featured-media clear">
+						<figure data-enlargeable style="cursor: nesw-resize" class="featured-media clear">
 							<?php the_post_thumbnail( 'post-image' ); ?>
 						</figure><!-- .featured-media -->
 							

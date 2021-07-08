@@ -1,4 +1,4 @@
-// jQuery( document ).ready( function( $ ) {
+jQuery( document ).ready( function( $ ) {
     
 $('figure[data-enlargeable] img').addClass('img-enlargeable').click(function() {
     var src = $(this).attr('src');
@@ -30,4 +30,4 @@ $('figure[data-enlargeable] img').addClass('img-enlargeable').click(function() {
     });
   });
 
-// } );
+} );
