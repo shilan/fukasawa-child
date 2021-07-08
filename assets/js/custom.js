@@ -9,7 +9,7 @@ $('figure[data-enlargeable] img').addClass('img-enlargeable').click(function() {
       $('body').off('keyup.modal-close');
     }
     modal = $('<div>').css({
-      background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+      background: 'RGBA(0,0,0,.8) url(' + src + ') no-repeat center',
       backgroundSize: 'contain',
       width: '100%',
       height: '100%',
