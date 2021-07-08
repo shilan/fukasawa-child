@@ -56,7 +56,7 @@
 
 	<?php if ( have_posts() ) : ?>
 
-		<div class="posts fadeIn" id="posts">
+		<div class="posts fade-in-image" id="posts">
 				
 			<?php 
 			
