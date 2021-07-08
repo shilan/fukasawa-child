@@ -1,3 +1,5 @@
+jQuery( document ).ready( function( $ ) {
+    
 $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
     var src = $(this).attr('src');
     var modal;
@@ -26,3 +28,5 @@ $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
       }
     });
   });
+
+} );
