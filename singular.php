@@ -19,7 +19,7 @@
 					
 						if ( $pos = strpos( $post->post_content, '<!--more-->' ) ) : ?>
 				
-							<figure class="featured-media clear">
+							<figure data-enlargeable style="cursor: zoom-in" class="featured-media clear">
 							
 								<?php
 										
