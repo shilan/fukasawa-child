@@ -1,4 +1,4 @@
-jQuery( document ).ready( function( $ ) {
+// jQuery( document ).ready( function( $ ) {
     
 $('figure[data-enlargeable] img').addClass('img-enlargeable').click(function() {
     var src = $(this).attr('src');
@@ -21,6 +21,7 @@ $('figure[data-enlargeable] img').addClass('img-enlargeable').click(function() {
     }).click(function() {
       removeModal();
     }).appendTo('body');
+    
     //handling ESC
     $('body').on('keyup.modal-close', function(e) {
       if (e.key === 'Escape') {
@@ -29,4 +30,4 @@ $('figure[data-enlargeable] img').addClass('img-enlargeable').click(function() {
     });
   });
 
-} );
+// } );
