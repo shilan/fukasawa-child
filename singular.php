@@ -79,13 +79,13 @@
 							$size = get_post_meta($post->ID, 'size', true);
 							if ($size) {
 						?>
-							<p class="custom_field size"><label>Size:</label> <?php echo $size; ?> cm</p>
+							<div class="custom_field size"><label>Size:</label> <?php echo $size; ?> cm</div>
 							<?php
 							}
 							$price = get_post_meta($post->ID, 'price', true);
 							if ($price) { 	
 							?>
-							<p class="custom_field price"><label>Price:</label> USD <?php  echo $price ?></p>
+							<div class="custom_field price"><label>Price:</label> USD <?php  echo $price ?></div>
 						<?php
 							}
 							the_content();
