@@ -50,7 +50,9 @@
 					<?php elseif ( has_post_thumbnail() ) : ?>
 							
 						<figure data-enlargeable style="cursor: all-scroll" class="featured-media clear">
+							<div style="padding: 15px;">
 							<?php the_post_thumbnail( 'post-image' ); ?>
+							</div>
 						</figure><!-- .featured-media -->
 							
 					<?php endif; ?>
