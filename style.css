@@ -83,11 +83,11 @@
 
 /** Fade in Posts **/
 .fade-in-image {
-    animation: fadeIn 7s;
-    -webkit-animation: fadeIn 7s;
-    -moz-animation: fadeIn 7s;
-    -o-animation: fadeIn 7s;
-    -ms-animation: fadeIn 7s;
+    animation: fadeIn 10s;
+    -webkit-animation: fadeIn 10s;
+    -moz-animation: fadeIn 10s;
+    -o-animation: fadeIn 10s;
+    -ms-animation: fadeIn 10s;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
