@@ -1,0 +1,82 @@
+/*
+ Theme Name:   fukasawa Child
+ Theme URI:    http://shilan.github.eu/fukasawa-child/
+ Description:  fukasawa Child Theme
+ Author:       Shilan Kalhor
+ Author URI:   http://watercolor-sisters.com
+ Template:     fukasawa
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  fukasawachild
+*/
+/** Post Singular **/
+.custom_field.price {
+    color: rgb(38, 85, 7);
+}
+.price label, .size label{
+    color: rgb(141, 141, 141);
+}
+.price {
+    font-weight: bold;
+}
+
+
+/** left sidebar animation in width larger than 1000 **/
+.sidebar:before {
+    background-color: #f2f2f2;
+}
+.sidebar {
+    position: absolute;
+    left: -280px;
+    width: 280px;
+    -webkit-animation: slide 0.7s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 0.7s forwards;
+    animation-delay: 0.5s;
+    background-color: #fff;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+@media ( max-width: 1000px ) {	
+	
+	.sidebar { 
+		align-items: center;
+		background: #fff;
+		border-bottom: 1px solid #ddd;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1em;
+		margin: 0;
+		padding: 30px 5%;
+		position: relative;
+        width: 100%;
+        animation: none;
+        left: 0;
+	}
+	
+    .sidebar:before { content: none; }
+}
+
+@media ( max-width: 600px ) {
+
+	
+    .sidebar { 
+        padding: 20px 5%;
+        animation: none;
+        left: 0px;
+     }
+}
+
+/** singular (post) **/
+.post-nav-prev .post-nav-next{
+    color: yellow;
+}
