@@ -49,9 +49,33 @@
 									
 					<?php elseif ( has_post_thumbnail() ) : ?>
 							
-						<figure data-enlargeable style="cursor: all-scroll" class="featured-media clear">
-							<div style="padding: 15px; background-color:#eee;">
-								<?php the_post_thumbnail( 'post-image' ); ?>
+						<figure data-enlargeable class="featured-media clear image-container">
+							<?php the_post_thumbnail( 'post-image' ); ?>
+							<?php
+								$prev_post = get_previous_post();
+								$next_post = get_next_post();
+							?>
+							<div overlay class="overlay">
+								<div class="lg-actions">
+									<?php if ( $prev_post ) : ?>
+										<div class="lg-prev lg-icon">
+											<a href="<?php echo get_permalink( $prev_post->ID ); ?>">
+											&larr;
+											</a>									
+										</div>
+									<?php endif; ?>	
+									<?php if ( $next_post ) : ?>
+										<a class="post-nav-next" href="<?php echo get_permalink( $next_post->ID ); ?>">	
+											<div class="lg-next lg-icon">
+												<a href="<?php echo get_permalink( $next_post->ID ); ?>">
+												&rarr;
+											</div>
+										</a>
+									<?php endif; ?>
+									<div expand class="lg-expand lg-icon">
+										[]
+									</div>
+								</div>
 							</div>
 						</figure><!-- .featured-media -->
 							
@@ -81,13 +105,13 @@
 							$size = get_post_meta($post->ID, 'size', true);
 							if ($size) {
 						?>
-							<div class="custom_field size"><label>Size:</label> <?php echo $size; ?> cm</div>
+								<div class="custom_field size"><label>Size:</label> <?php echo $size; ?> cm</div>
 							<?php
 							}
 							$price = get_post_meta($post->ID, 'price', true);
 							if ($price) { 	
 							?>
-							<div class="custom_field price"><label>Price:</label> USD <?php  echo $price ?></div>
+								<div class="custom_field price"><label>Price:</label> USD <?php  echo $price ?></div>
 						<?php
 							}
 							the_content();

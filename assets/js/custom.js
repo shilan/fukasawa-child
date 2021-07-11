@@ -1,7 +1,7 @@
 jQuery( document ).ready( function( $ ) {
     
-$('figure[data-enlargeable] img').addClass('img-enlargeable').click(function() {
-    var src = $(this).attr('src');
+$('div[expand]').addClass('img-enlargeable').click(function() {
+    var src = $('figure[data-enlargeable] img').attr('src');
     var modal;
   
     function removeModal() {
